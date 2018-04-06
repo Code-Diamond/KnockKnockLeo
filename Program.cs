@@ -13,7 +13,7 @@ namespace KnockKnockLeo
         {
             A("Hello Leo. . .                 \nKnock,  Knock,  Leo. . .                       " + "\n" + "\n");
             B();
-            A("\n   \n   \n   \nThe spam has you...\n\n", 100);
+            A("\n   \nWake up Leo. . .   \n   \nThe spam has you...\n\n", 100);
             Console.ReadKey();
 
         }
@@ -102,9 +102,10 @@ namespace KnockKnockLeo
                         }
                         break;
                 }
-
-                Console.ForegroundColor = ConsoleColor.White;
             }
+            Console.ForegroundColor = ConsoleColor.White;
+            for (int i = 0; i < 50; i++) { Console.WriteLine("\n"); }
+
         }
     }
 }
