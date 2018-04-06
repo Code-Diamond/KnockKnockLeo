@@ -11,12 +11,13 @@ namespace KnockKnockLeo
     {
         static void Main(string[] args)
         {
-            string story = "Hello Leo, follow the white rabbit. . .";
-            A(story);
-            story = "Knock knock Leo. . .";
-            A("\n");
-            A(story);
+            //string story = "Hello Leo, follow the white rabbit. . .";
+            //A(story);
+            //story = "Knock knock Leo. . .";
+            //A("\n");
+            //A(story);
             B();
+            Console.WriteLine("\nThe spam has you...\n");
             Console.ReadKey();
 
         }
@@ -42,7 +43,7 @@ namespace KnockKnockLeo
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Random rand = new Random();
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < 25000; i++)
             {
                 char[] numbers = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
                 char[] lowerCase = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
@@ -50,7 +51,7 @@ namespace KnockKnockLeo
                 char[] specialChar = { '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+' };
                 char[] evenMoreSpecial = { (char)156, (char)182, (char)240, (char)248, (char)142, (char)232, (char)240, (char)231, (char)253, (char)254, (char)255, (char)201, (char)202, (char)203, (char)204 };
                 string[] whatCipherSaw = { "BLONDE", "BRUNETTE", "REDHEAD" };
-                int randomCharType = rand.Next(6);
+                int randomCharType = rand.Next(7);
                 int randomNumber;
                 switch (randomCharType)
                 {
@@ -84,7 +85,15 @@ namespace KnockKnockLeo
                             C(whatCipherSaw[randomNumber] + "");
                             Console.ForegroundColor = ConsoleColor.Green;
                         }
-                        
+                        break;
+                    case 6:
+                        int unbelievablyRandom = rand.Next(1000);
+                        if (unbelievablyRandom == 0)
+                        {
+                            Console.ForegroundColor = ConsoleColor.White;
+                            C("  Rabbit  ");
+                            Console.ForegroundColor = ConsoleColor.Green;
+                        }
                         break;
                 }
             }
