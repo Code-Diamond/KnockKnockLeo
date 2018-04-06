@@ -11,11 +11,11 @@ namespace KnockKnockLeo
     {
         static void Main(string[] args)
         {
-            //string story = "Hello Leo, follow the white rabbit. . .";
-            //A(story);
-            //story = "Knock knock Leo. . .";
-            //A("\n");
-            //A(story);
+            string story = "Hello Leo, follow the white rabbit. . .";
+            A(story);
+            story = "Knock knock Leo. . .";
+            A("\n");
+            A(story);
             B();
             Console.WriteLine("\nThe spam has you...\n");
             Console.ReadKey();
