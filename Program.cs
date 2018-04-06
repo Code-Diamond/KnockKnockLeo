@@ -26,7 +26,7 @@ namespace KnockKnockLeo
             for(int i = 0; i < a.Length; i++)
             {
                 Console.Write(a[i]);
-                Thread.Sleep(100);
+                Thread.Sleep(185);
             }        
         }
         public static void C(string a)
