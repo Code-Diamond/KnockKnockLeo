@@ -48,7 +48,8 @@ namespace KnockKnockLeo
                 char[] lowerCase = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
                 char[] upperCase = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
                 char[] specialChar = { '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+' };
-                int randomCharType = rand.Next(4);
+                char[] evenMoreSpecial = { (char)156, (char)182, (char)240, (char)248, (char)142, (char)232, (char)240, (char)231, (char)253, (char)254, (char)255, (char)201, (char)202, (char)203, (char)204 };
+                int randomCharType = rand.Next(5);
                 int randomNumber;
                 switch (randomCharType)
                 {
@@ -68,6 +69,10 @@ namespace KnockKnockLeo
                     case 3:
                         randomNumber = rand.Next(12);
                         C(specialChar[randomNumber] + "");
+                        break;
+                    case 4:
+                        randomNumber = rand.Next(15);
+                        C(evenMoreSpecial[randomNumber] + "    ");
                         break;
                 }
             }
