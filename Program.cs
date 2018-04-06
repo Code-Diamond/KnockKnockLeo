@@ -11,13 +11,9 @@ namespace KnockKnockLeo
     {
         static void Main(string[] args)
         {
-            string story = "Hello Leo, follow the white rabbit. . .";
-            A(story);
-            story = "Knock knock Leo. . .";
-            A("\n");
-            A(story);
+            A("Hello Leo. . .                 \nKnock,  Knock,  Leo. . .                       " + "\n" + "\n");
             B();
-            Console.WriteLine("\nThe spam has you...\n");
+            A("\n   \n   \n   \nThe spam has you...\n\n", 100);
             Console.ReadKey();
 
         }
@@ -30,6 +26,14 @@ namespace KnockKnockLeo
                 Thread.Sleep(185);
             }        
         }
+        public static void A(string a, int b)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.Write(a[i]);
+                Thread.Sleep(b);
+            }
+        }
         public static void C(string a)
         {
             for (int i = 0; i < a.Length; i++)
@@ -41,6 +45,8 @@ namespace KnockKnockLeo
         }
         public static void B()
         {
+            for (int i = 0; i < 50; i++) { Console.WriteLine("\n"); }
+
             Console.ForegroundColor = ConsoleColor.Green;
             Random rand = new Random();
             for (int i = 0; i < 25000; i++)
@@ -96,6 +102,8 @@ namespace KnockKnockLeo
                         }
                         break;
                 }
+
+                Console.ForegroundColor = ConsoleColor.White;
             }
         }
     }
